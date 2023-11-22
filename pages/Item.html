@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Page</title>
+    <style>
+      body {
+        background-color: #0c0c0c;
+        color: white;
+        font-family: "Poppins", sans-serif;
+      }
+
+      .container {
+        width: 80%;
+        margin: 0 auto;
+        padding: 20px;
+      }
+      .navbar {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+      }
+      .links {
+        display: flex;
+        gap: 30px;
+        flex-direction: row;
+      }
+      .product-info {
+        display: flex;
+        gap: 20px;
+      }
+      .product-image {
+        width: 300px;
+        height: 300px;
+        margin-bottom: 20px;
+      }
+
+      .productsContainer {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+        width: 100%;
+      }
+      .productItem {
+        background-color: #131313;
+        display: inline-block;
+        max-width: 200px;
+        padding: 5px;
+      }
+      .productPriceContainer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+      }
+      .add-to-cart-button {
+        background-color: #654dff;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        cursor: pointer;
+        border-radius: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="navbar">
+      <a href="Task2.html">
+        <img src="D:\Front\pages\public\shop_bag.png" alt="logo" height="50" />
+      </a>
+      <nav>
+        <ul class="links">
+          <li><a href="D:\Front\pages\MainPage.html">New</a></li>
+          <li><a href="#explore">Explore</a></li>
+          <li><a href="#categories">Categories</a></li>
+        </ul>
+      </nav>
+      <button>Sign in</button>
+    </header>
+    <div class="container">
+      <section class="product-info">
+        <img
+          src="D:\Front\pages\public\no-image.png"
+          alt="Product Image"
+          class="product-image"
+        />
+
+        <div>
+          <h1 class="product-name">Product Name</h1>
+          <p class="product-price">$19.99</p>
+
+          <button class="add-to-cart-button">Add to Cart</button>
+        </div>
+      </section>
+      <section id="similar-products">
+        <h2>Similar Products</h2>
+        <figure class="productItem" id="item">
+          <img
+            src="D:\Front\pages\public\no-image.png"
+            alt="product item"
+            height="150"
+          />
+          <figcaption>
+            <p>Corem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </figcaption>
+          <div class="productPriceContainer">
+            <h4>14.99$</h4>
+            <button style="height: 30px; width: 100px">Buy</button>
+          </div>
+        </figure>
+        <figure class="productItem" id="item">
+          <img
+            src="D:\Front\pages\public\no-image.png"
+            alt="product item"
+            height="150"
+          />
+          <figcaption>
+            <p>Corem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </figcaption>
+          <div class="productPriceContainer">
+            <h4>14.99$</h4>
+            <button style="height: 30px; width: 100px">Buy</button>
+          </div>
+        </figure>
+        <figure class="productItem" id="item">
+          <img
+            src="D:\Front\pages\public\no-image.png"
+            alt="product item"
+            height="150"
+          />
+          <figcaption>
+            <p>Corem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </figcaption>
+          <div class="productPriceContainer">
+            <h4>14.99$</h4>
+            <button style="height: 30px; width: 100px">Buy</button>
+          </div>
+        </figure>
+      </section>
+    </div>
+  </body>
+</html>

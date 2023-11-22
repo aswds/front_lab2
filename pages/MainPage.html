@@ -10,6 +10,27 @@
       rel="stylesheet"
     />
     <link rel="icon" href="favicon.ico" type="image/x-icon" />
+
+    <style>
+      .productsContainer {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+        width: 100%;
+      }
+      .productItem {
+        background-color: #131313;
+        display: inline-block;
+        max-width: 200px;
+        padding: 5px;
+      }
+      .productPriceContainer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+      }
+    </style>
   </head>
   <body
     style="
@@ -29,7 +50,7 @@
       </a>
       <nav>
         <ul>
-          <li><a href="#new">New</a></li>
+          <li><a href="D:\Front\pages\MainPage.html">New</a></li>
           <li><a href="#explore">Explore</a></li>
           <li><a href="#categories">Categories</a></li>
         </ul>
@@ -41,102 +62,23 @@
         <h1>New Collection</h1>
         <input placeholder="Search" />
       </section>
-      <section
-        id="products"
-        style="
-          display: grid;
-          grid-template-columns: repeat(3, 1fr);
-          gap: 10px;
-          width: 100%;
-        "
-      >
-        <div
-          style="
-            background-color: #131313;
-            display: inline-block;
-            max-width: 200px;
-            padding: 5px;
-          "
-          id="item"
-        >
+      <section id="products" class="productsContainer">
+        <figure class="productItem" id="item">
           <img
             src="D:\Front\pages\public\no-image.png"
             alt="product item"
             height="150"
           />
-          <article>
-            Corem ipsum dolor sit amet, consectetur adipiscing elit.
-          </article>
-          <div
-            style="
-              display: flex;
-              flex-direction: row;
-              justify-content: space-evenly;
-              align-items: center;
-            "
-          >
+          <figcaption>
+            <p>Corem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </figcaption>
+          <div class="productPriceContainer">
             <h4>14.99$</h4>
-            <button style="height: 30px; width: 100px">Buy</button>
+            <button style="height: 30px; width: 100px">
+              <a href="D:\Front\pages\Item.html">Buy</a>
+            </button>
           </div>
-        </div>
-        <div
-          style="
-            background-color: #131313;
-            display: inline-block;
-            max-width: 200px;
-            padding: 5px;
-          "
-          id="item"
-        >
-          <img
-            src="D:\Front\pages\public\no-image.png"
-            alt="product item"
-            height="150"
-          />
-          <article>
-            Corem ipsum dolor sit amet, consectetur adipiscing elit.
-          </article>
-          <div
-            style="
-              display: flex;
-              flex-direction: row;
-              justify-content: space-evenly;
-              align-items: center;
-            "
-          >
-            <h4>14.99$</h4>
-            <button style="height: 30px; width: 100px">Buy</button>
-          </div>
-        </div>
-        <div
-          style="
-            background-color: #131313;
-            display: inline-block;
-            max-width: 200px;
-            padding: 5px;
-          "
-          id="item"
-        >
-          <img
-            src="D:\Front\pages\public\no-image.png"
-            alt="product item"
-            height="150"
-          />
-          <article>
-            Corem ipsum dolor sit amet, consectetur adipiscing elit.
-          </article>
-          <div
-            style="
-              display: flex;
-              flex-direction: row;
-              justify-content: space-evenly;
-              align-items: center;
-            "
-          >
-            <h4>14.99$</h4>
-            <button style="height: 30px; width: 100px">Buy</button>
-          </div>
-        </div>
+        </figure>
       </section>
     </main>
 
