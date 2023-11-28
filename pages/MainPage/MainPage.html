@@ -13,6 +13,17 @@
     <link rel="stylesheet" href="../styles.css" />
     <link rel="stylesheet" href="./MainPage.css" />
     <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <style>
+      .float-left {
+        float: left;
+        width: 50%;
+      }
+
+      .float-right {
+        float: right;
+        width: 50%;
+      }
+    </style>
   </head>
   <body
     style="
@@ -49,9 +60,9 @@
           <figcaption>
             <p>Corem ipsum dolor sit amet, consectetur adipiscing elit.</p>
           </figcaption>
-          <div class="productPriceContainer">
+          <div class="productPriceContainer" style="z-index: -10">
             <h4>14.99$</h4>
-            <button style="height: 30px; width: 100px">
+            <button style="height: 30px; width: 100px" class="buy-button">
               <a href="D:\Front\pages\Item.html">Buy</a>
             </button>
           </div>
@@ -67,7 +78,7 @@
           </figcaption>
           <div class="productPriceContainer">
             <h4>14.99$</h4>
-            <button style="height: 30px; width: 100px">
+            <button style="height: 30px; width: 100px" class="buy-button">
               <a href="D:\Front\pages\Item.html">Buy</a>
             </button>
           </div>
@@ -83,39 +94,35 @@
           </figcaption>
           <div class="productPriceContainer">
             <h4>14.99$</h4>
-            <button style="height: 30px; width: 100px">
+            <button style="height: 30px; width: 100px" class="buy-button">
               <a href="D:\Front\pages\Item.html">Buy</a>
             </button>
           </div>
         </figure>
       </section>
-      <table>
-        <caption>
-          Table
-        </caption>
-        <thead>
-          <tr>
-            <th>Hello</th>
-            <th>Hello</th>
-            <th>Hello</th>
-            <th>Hello</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <th>Hello</th>
-            <th>Hello</th>
-            <th>Hello</th>
-            <th>Hello</th>
-          </tr>
-          <tr>
-            <th>Hello</th>
-            <th>Hello</th>
-            <th>Hello</th>
-            <th>Hello</th>
-          </tr>
-        </tbody>
-      </table>
+      <div style="display: flex; flex-direction: row">
+        <div style="max-width: 50%">
+          Discover, Connect, and Transact with Ease!
+          <div class="float-left" style="height: 100px; width: 100px">
+            About us
+          </div>
+          At MarketPlace, we bring buyers and sellers together in a seamless
+          online ecosystem. Explore a diverse array of products and services,
+          connect with trusted sellers, and experience the convenience of secure
+          transactions—all in one place. Your perfect marketplace for endless
+          possibilities!
+        </div>
+
+        <div style="max-width: 50%">
+          <div class="float-right" style="height: 100px; width: 100px">
+            About products
+          </div>
+          Discover a vast array of products that cater to your unique needs and
+          preferences. From cutting-edge electronics to timeless fashion, we've
+          curated a collection that reflects the diversity of our global
+          community.
+        </div>
+      </div>
     </main>
 
     <footer>
