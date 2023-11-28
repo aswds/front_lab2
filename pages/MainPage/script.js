@@ -4,7 +4,9 @@ document.addEventListener("DOMContentLoaded", function () {
     element.style.right = "10%";
   }, 2000);
 
-  document.addEventListener("click", function () {});
+  document.addEventListener("click", function () {
+    console.log("Hello world");
+  });
 
   var floatWindow = document.getElementById("float-window");
   var aboutUs = document.querySelector(".float-left");
