@@ -26,7 +26,7 @@
   z-index: 0;
 }
 img + figcaption {
-  color: green;
+  color: grey;
   transition: transform 200ms ease-in-out;
   font-family: "Courier New", Courier, monospace;
   text-align: center;

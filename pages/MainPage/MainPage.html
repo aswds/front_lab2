@@ -9,7 +9,7 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
-
+    <script src="script.js"></script>
     <link rel="stylesheet" href="../styles.css" />
     <link rel="stylesheet" href="./MainPage.css" />
     <link rel="icon" href="favicon.ico" type="image/x-icon" />
@@ -22,6 +22,17 @@
       .float-right {
         float: right;
         width: 50%;
+      }
+      .float-window-style {
+        width: 200px;
+        position: absolute;
+        right: -300px;
+        z-index: 10;
+        background-color: rgba(0, 0, 0, 0.8);
+        padding: 20px;
+        border-radius: 20px;
+        margin-left: -200px;
+        transition: right 400ms ease-in-out;
       }
     </style>
   </head>
@@ -100,6 +111,11 @@
           </div>
         </figure>
       </section>
+
+      <div id="float-window" class="float-window-style">
+        <h1>Need help?</h1>
+      </div>
+
       <div style="display: flex; flex-direction: row">
         <div style="max-width: 50%">
           Discover, Connect, and Transact with Ease!
