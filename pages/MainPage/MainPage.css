@@ -18,7 +18,13 @@
   background-color: black;
   color: white;
 }
-
+.buy-button {
+  background-color: #654dff;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  z-index: 0;
+}
 img + figcaption {
   color: green;
   transition: transform 200ms ease-in-out;
@@ -31,18 +37,13 @@ img + figcaption:hover {
 }
 
 figcaption ~ div {
-  background: linear-gradient(
-    90deg,
-    rgba(2, 0, 36, 1) 0%,
-    rgba(84, 9, 121, 1) 35%,
-    rgba(0, 212, 255, 1) 100%
-  );
+  background: linear-gradient(180deg, #131313 65%, #654dff 100%);
+  border-radius: 10px;
 }
 p::first-letter {
   font-size: 150%;
   font-weight: bold;
   color: red;
-  z-index: -10;
 }
 #products {
   display: inline;
