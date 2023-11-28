@@ -69,12 +69,21 @@
         justify-content: space-evenly;
         align-items: center;
       }
+      .image-container {
+        filter: blur(10px);
+      }
     </style>
   </head>
   <body>
     <header class="navbar">
       <a href="../MainPage/MainPage.html">
-        <img src="D:\Front\pages\public\shop_bag.png" alt="logo" height="50" />
+        <div class="image-container">
+          <img
+            src="D:\Front\pages\public\shop_bag.png"
+            alt="logo"
+            height="50"
+          />
+        </div>
       </a>
       <nav>
         <ul class="links">
@@ -95,11 +104,14 @@
       </section>
 
       <figure class="productItem" id="item">
-        <img
-          src="D:\Front\pages\public\no-image.png"
-          alt="product item"
-          height="150"
-        />
+        <div class="image-container">
+          <img
+            src="D:\Front\pages\public\no-image.png"
+            alt="product item"
+            height="150"
+          />
+        </div>
+
         <figcaption>
           <p>Corem ipsum dolor sit amet, consectetur adipiscing elit.</p>
         </figcaption>
