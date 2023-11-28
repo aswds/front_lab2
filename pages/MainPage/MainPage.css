@@ -1,0 +1,49 @@
+[id="search-items"] {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+[src] {
+  box-shadow: 0px 0px 10px white;
+}
+.search-bar {
+  border: none;
+  padding: 10px;
+  border-radius: 10px;
+  transition: background-color 300ms ease-in-out, color 300ms ease-in-out;
+}
+.search-bar:focus {
+  background-color: black;
+  color: white;
+}
+
+img + figcaption {
+  color: green;
+  transition: transform 200ms ease-in-out;
+  font-family: "Courier New", Courier, monospace;
+  text-align: center;
+}
+
+img + figcaption:hover {
+  transform: translateY(-10px);
+}
+
+figcaption ~ div {
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(84, 9, 121, 1) 35%,
+    rgba(0, 212, 255, 1) 100%
+  );
+}
+p::first-letter {
+  font-size: 150%;
+  font-weight: bold;
+  color: red;
+  z-index: -10;
+}
+#products {
+  display: inline;
+}

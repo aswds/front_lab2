@@ -3,29 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles.css" />
+    <link rel="stylesheet" href="./Auth.css" />
     <title>Product Page</title>
     <style>
-      body {
-        background-color: #0c0c0c;
-        color: white;
-        font-family: "Poppins", sans-serif;
-      }
-
-      .container {
-        width: 80%;
-        margin: 0 auto;
-        padding: 20px;
-      }
-      .navbar {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-      }
-      .links {
-        display: flex;
-        gap: 30px;
-        flex-direction: row;
-      }
       .marketContainer {
         display: flex;
         align-items: center;
@@ -35,12 +16,6 @@
         display: flex;
         flex-direction: column;
         max-width: 300px;
-      }
-      .container {
-        display: flex;
-        flex: 1;
-        align-items: center;
-        justify-content: space-around;
       }
     </style>
   </head>
@@ -56,7 +31,7 @@
           <li><a href="#categories">Categories</a></li>
         </ul>
       </nav>
-      <button>Sign in</button>
+      <button class="auth-button">Sign in</button>
     </header>
     <section class="container">
       <section id="" class="marketContainer">
@@ -66,11 +41,11 @@
           <h1>you can trust</h1>
         </div>
       </section>
-      <section id="" class="authForm">
+      <form id="" class="authForm">
         <input placeholder="Email" />
         <input placeholder="Password" />
         <button>Sign in</button>
-      </section>
+      </form>
     </section>
   </body>
 </html>
